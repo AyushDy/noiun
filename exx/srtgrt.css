@@ -1,0 +1,86 @@
+:root{
+    --prime:rgb(35, 35, 35);
+    --sec:rgb(159, 159, 159);
+    --dark:rgb(153, 144, 144);
+    --text:rgb(121, 121, 121);
+    --button:rgb(54, 54, 54);
+
+}
+
+
+*{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: var(--text);
+    user-select: none;
+}
+
+body{
+    /* background: url(https://img.freepik.com/free-photo/colorful-abstract-textured-background-design_53876-108265.jpg?w=996&t=st=1708778019~exp=1708778619~hmac=a2c2cc82385a869f6480d36e7d57be51d21e85e2f214ac514223f3574a3b8e34); */
+    margin: 0;
+    background-color: var(--prime);
+}
+
+.buttonDiv{
+    height: 40px;
+    display: flex;
+    width: 100%;
+    background-color: white;
+    border-radius: 5px;
+    position: sticky;
+    top: 200px;
+   
+}
+
+button{
+  width: 100%;
+  background-color: black;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease-out;
+  border-bottom: none;
+}
+
+button:hover{
+    background-color:white;
+}
+
+
+
+.head{
+    height: 200px;
+    background-color: var(--prime);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    position: sticky;
+    top: 0px;
+}
+
+.main{
+    display: flex;
+    flex-direction: row;
+}
+
+.aside{
+    width: 30%;
+    margin: 1%;
+    /* border: 1px solid; */
+    height: fit-content;
+    border-radius: 20px;
+    position: sticky;
+    top: 200px;
+    /* background-color: gray; */
+   
+}
+
+.tabs{
+   width: 67%;
+   margin: 1%;
+   background-color: rgb(48, 48, 48);
+   border-radius: 10px;
+}
+
+.content{
+    padding: 7%;
+}
+
