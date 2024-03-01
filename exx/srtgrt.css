@@ -4,6 +4,7 @@
     --dark:rgb(153, 144, 144);
     --text:rgb(121, 121, 121);
     --button:rgb(54, 54, 54);
+    --colo:#505050;
 
 }
 
@@ -39,21 +40,24 @@ button{
   transition: background-color 0.3s ease-out;
   border-bottom: none;
 }
-
-button:hover{
-    background-color:white;
-}
-
-
-
 .head{
     height: 200px;
-    background-color: var(--prime);
+    background:url(https://img.freepik.com/free-vector/monogram-line-seamless-pattern_8830-622.jpg?w=740&t=st=1709294644~exp=1709295244~hmac=a437c856524f7217faed627951a2d2d26fac3667ee04c1d222de24f36171241c);
     display: flex;
     align-items: center;
     flex-direction: column;
     position: sticky;
     top: 0px;
+    box-shadow: 0 0 58px black;
+}
+.head-content{
+    text-align: center;
+    padding: 10px;
+    width: 60vw;
+    border-radius: 30px;
+    margin-top: 10px;
+    background: transparent;
+    backdrop-filter: blur(3px);
 }
 
 .main{
@@ -64,13 +68,12 @@ button:hover{
 .aside{
     width: 30%;
     margin: 1%;
-    /* border: 1px solid; */
     height: fit-content;
     border-radius: 20px;
     position: sticky;
     top: 200px;
-    /* background-color: gray; */
-   
+    filter: drop-shadow(20px 4px 5px black);
+    margin-top: 10px;
 }
 
 .tabs{
@@ -78,6 +81,7 @@ button:hover{
    margin: 1%;
    background-color: rgb(48, 48, 48);
    border-radius: 10px;
+   box-shadow: 0px 0px 10px black;
 }
 
 .content{
