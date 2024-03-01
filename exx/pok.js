@@ -344,6 +344,7 @@ buttons.forEach(button=>{
         button.style.border=`2px solid gray`;
         button.style.borderBottom =`none`;
         button.style.color='white';
+         window.scrollTo({top:0})
     });
 });
 
