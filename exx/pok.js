@@ -8,6 +8,8 @@ const links={
     Squirtle: `https://media.tenor.com/7c-SsbAcK9oAAAAi/pok%C3%A9mon-schildkr%C3%B6te.gif`
 }
 
+let prevButton=buttons[0];
+
 
 const contents= {
     Charmander: `Charmander is a bipedal, reptilian Pokémon with a primarily orange body and blue eyes. Its underside from the chest down and the soles of its feet are cream-colored. It has two small fangs visible in its upper jaw and two smaller fangs in its lower jaw. A fire burns at the tip of this Pokémon's slender tail and has blazed there since Charmander's birth.
@@ -328,21 +330,22 @@ const contents= {
 
 buttons.forEach(button=>{
     button.addEventListener('click',function(){
-        buttons.forEach(btn => {
-            btn.style.backgroundColor = 'rgb(54, 54, 54)';
-            btn.style.border='none';
-            btn.style.color='rgb(121, 121, 121)';
-        });
+            
+        prevButton.style.color='rgb(121, 121, 121)';
+        prevButton.style.border='none';
+        prevButton.style.backgroundColor='black';
+        prevButton=button;
+
         const text= button.textContent;
         content.textContent= contents[text];
         const image= document.querySelector('img');
         image.src=links[text];
-        button.style.backgroundColor=`rgb(159, 159, 159)`;
+        button.style.backgroundColor=`rgb(48, 48, 48)`;
         button.style.border=`2px solid gray`;
         button.style.borderBottom =`none`;
         button.style.color='white';
     });
-})
+});
 
 
 buttons[0].click();
