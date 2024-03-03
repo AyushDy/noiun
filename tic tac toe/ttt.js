@@ -1,3 +1,10 @@
+const bgImg= new Image();
+bgImg.src="https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/88cd4e06-e4dc-45bb-90b6-a7146f058af1/d990b3s-9b2063bb-0892-4024-8518-87b768c266c2.gif?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcLzg4Y2Q0ZTA2LWU0ZGMtNDViYi05MGI2LWE3MTQ2ZjA1OGFmMVwvZDk5MGIzcy05YjIwNjNiYi0wODkyLTQwMjQtODUxOC04N2I3NjhjMjY2YzIuZ2lmIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.t1GNuMcj65Rz1ZLo-maw__H0mikzLa3yl_v5By67jCI";
+
+bgImg.onload= function(){
+    document.body.style.backgroundImage= `url(${bgImg.src})`;
+}
+
 const boxes= document.querySelectorAll('.box');
 const mainbox=document.querySelector('.main');
 const mainContent= mainbox.innerHTML;
